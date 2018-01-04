@@ -16,7 +16,7 @@ export default css`
   }
 
   ul {
-    margin: 40vh 30px 0 0;
+    margin: 30vh 30px 0 0;
     list-style: none;
   }
 

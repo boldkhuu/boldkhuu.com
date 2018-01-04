@@ -20,7 +20,7 @@ const Home = () => {
 
         .description {
           position: absolute;
-          top: calc(40vh - 4px);
+          top: calc(30vh - 4px);
           color: #fff;
           line-height: 40px;
           font-size: 24px;

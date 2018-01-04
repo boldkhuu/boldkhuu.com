@@ -1,8 +1,13 @@
+import PropTypes from 'prop-types';
 import Link from 'next/link';
 import { withRouter } from 'next/router';
 import styles from './styles';
 
 const menus = ['skills', 'experience', 'education', 'contact'];
+
+const propTypes = {
+  router: PropTypes.object.isRequired,
+};
 
 const Navigation = ({ router }) => {
   return (
@@ -26,5 +31,7 @@ const Navigation = ({ router }) => {
     </div>
   );
 };
+
+Navigation.propTypes = propTypes;
 
 export default withRouter(Navigation);

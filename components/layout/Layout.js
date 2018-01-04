@@ -1,6 +1,11 @@
+import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { Navigation } from '..';
 import styles, { global } from './styles';
+
+const propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 const Layout = ({ children }) => {
   return (
@@ -22,5 +27,7 @@ const Layout = ({ children }) => {
     </div>
   );
 };
+
+Layout.propTypes = propTypes;
 
 export default Layout;
