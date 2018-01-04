@@ -1,0 +1,1 @@
+export default () => <div>Welcome to Boldkhuu's personal website!</div>;

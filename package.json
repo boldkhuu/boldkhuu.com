@@ -1,0 +1,24 @@
+{
+  "name": "boldkhuu.com",
+  "description": "Boldkhuu's personal website",
+  "version": "0.0.1",
+  "author": {
+    "name": "Boldkhuu Batbaatar",
+    "email": "hi@boldkhuu.com",
+    "url": "http://boldkhuu.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boldkhuu/boldkhuu.com"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^4.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
