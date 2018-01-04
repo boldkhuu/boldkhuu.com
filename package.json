@@ -11,14 +11,30 @@
     "type": "git",
     "url": "https://github.com/boldkhuu/boldkhuu.com"
   },
+  "license": "ISC",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --write 'components/**/*.js' 'pages/**/*.js'",
+    "precommit": "lint-staged"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "single-quote": true,
+    "trailing-comma": "all"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": ["prettier --write", "git add"]
   },
   "dependencies": {
     "next": "^4.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "1.9.2"
   }
 }
