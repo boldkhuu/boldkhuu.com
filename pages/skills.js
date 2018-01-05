@@ -28,16 +28,6 @@ const Skills = () => {
           position: relative;
           height: 100%;
         }
-
-        .description {
-          position: absolute;
-          top: calc(40vh - 4px);
-          color: #fff;
-          line-height: 40px;
-          font-size: 24px;
-          margin: 0 0 0 80px;
-          width: 60vw;
-        }
       `}</style>
     </Layout>
   );
