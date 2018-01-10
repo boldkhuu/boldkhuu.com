@@ -29,6 +29,7 @@
     "*.{js,json,css,md}": ["prettier --write", "git add"]
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "next": "^4.2.1",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",

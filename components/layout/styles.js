@@ -20,6 +20,7 @@ export const global = css`
 
   body {
     font: 300 100%/1.5 'Roboto', sans-serif;
+    color: #aaa;
   }
 
   a {
