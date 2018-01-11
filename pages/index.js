@@ -5,9 +5,12 @@ const Home = () => {
     <Layout>
       <div className="container">
         <div className="description">
-          <strong>Boldkhuu Batbaatar</strong> is a passionate developer based in the United States.
-          He considers himself more than just a developer, but a passionate creator as well, always
-          giving life to the projects he works on and constantly pushing his boundaries.
+          {'My name is '} <strong>{'Boldkhuu Batbaatar'}</strong>
+          {' - Software engineer & full-stack JS developer based in the United States.'}
+          <br />
+          {"I'm passionate about solving problems with semantically and syntactically clean code."}
+          <br />
+          {'Besides that, I really care about beauty of UI/UX design.'}
         </div>
       </div>
 
