@@ -14,9 +14,10 @@ export const skill = css`
   }
 
   h2 {
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     float: left;
+    line-height: 1em;
   }
 
   ul {
@@ -35,7 +36,7 @@ export const skill = css`
 
 export const meter = css`
   .meter {
-    height: 1px;
+    height: 2px;
     background-color: #333;
     grid-column: 1 / 3;
     position: relative;
@@ -45,7 +46,7 @@ export const meter = css`
     background-color: #fff;
     width: 0;
     position: absolute;
-    height: 1px;
+    height: 2px;
 
     transition: width 0.2s ease-in-out;
     -webkit-transition: width 0.2s ease-in-out;

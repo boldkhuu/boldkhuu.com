@@ -6,19 +6,30 @@ const Skills = () => {
       <div className="container">
         <SkillsList>
           <SkillsList.Skill
+            name="Javascript"
+            topics={['ES6', 'ES7', 'Npm', 'Yarn', 'Jest', 'Eslint', 'Prettier']}
+            percent={90}
+            color="#f7df1e"
+          />
+          <SkillsList.Skill
+            name="Node JS"
+            topics={['Express', 'Meteor', 'NextJS', 'MongoDB as database']}
+            percent={85}
+            color="#43853D"
+          />
+          <SkillsList.Skill
             name="React"
-            topics={['Redux', 'StyledComponents']}
+            topics={['Redux', 'React Native', 'StyledComponents']}
             percent={90}
             color="#61DAFB"
           />
           <SkillsList.Skill
-            name="Node JS"
-            topics={['Express', 'Meteor']}
+            name="CSS 3"
+            topics={['SASS', 'Flexbox', 'Grid']}
             percent={85}
-            color="#43853D"
+            color="#0073B9"
           />
           <SkillsList.Skill name="HTML 5" percent={95} color="#E75017" />
-          <SkillsList.Skill name="CSS 3" topics={['SASS']} percent={85} color="#0073B9" />
         </SkillsList>
       </div>
 
