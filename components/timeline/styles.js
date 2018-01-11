@@ -3,7 +3,6 @@ import css from 'styled-jsx/css';
 export const timeline = css`
   .timeline {
     padding: 30vh 0 0 80px;
-    width: 40vw;
   }
 `;
 
