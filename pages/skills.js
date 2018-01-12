@@ -24,12 +24,17 @@ const Skills = () => {
             color="#61DAFB"
           />
           <SkillsList.Skill
-            name="CSS 3"
+            name="HTML & CSS"
             topics={['SASS', 'Flexbox', 'Grid']}
             percent={85}
             color="#0073B9"
           />
-          <SkillsList.Skill name="HTML 5" percent={95} color="#E75017" />
+          <SkillsList.Skill
+            name="Tools"
+            topics={['Mac OS', 'Linux', 'Shell', 'Git', 'VS Code', 'Sketch', 'Photoshop']}
+            percent={95}
+            color="#E75017"
+          />
         </SkillsList>
       </div>
 
