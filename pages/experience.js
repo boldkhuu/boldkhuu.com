@@ -2,7 +2,7 @@ import { Layout, Timeline } from '../components';
 
 const Experience = () => {
   return (
-    <Layout>
+    <Layout title="Experience">
       <div className="container">
         <Timeline>
           <Timeline.Item start="2010" end="2017" height="140px" color="#2980b9">

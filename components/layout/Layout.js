@@ -4,14 +4,15 @@ import { Navigation } from '..';
 import styles, { global } from './styles';
 
 const propTypes = {
+  title: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
-const Layout = ({ children }) => {
+const Layout = ({ title, children }) => {
   return (
     <div className="container">
       <Head>
-        <title>Boldkhuu Batbaatar</title>
+        <title>{title ? `${title} | ` : ''}Boldkhuu Batbaatar</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet" />
       </Head>

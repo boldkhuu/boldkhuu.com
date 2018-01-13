@@ -2,7 +2,7 @@ import { Layout, SkillsList } from '../components';
 
 const Skills = () => {
   return (
-    <Layout>
+    <Layout title="Skills">
       <div className="container">
         <SkillsList>
           <SkillsList.Skill

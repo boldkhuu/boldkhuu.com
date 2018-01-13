@@ -2,7 +2,7 @@ import { Layout } from '../components';
 
 const Contact = () => {
   return (
-    <Layout>
+    <Layout title="Contact">
       <div className="container">
         <div className="content">
           <p>
