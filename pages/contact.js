@@ -7,6 +7,10 @@ const propTypes = {
 };
 
 const Contact = ({ fullUrl }) => {
+  function onMailClick() {
+    window.location.href = `mailto:${['hi', '@', 'boldkhuu', 'com'].join()}`;
+  }
+
   return (
     <Layout title="Contact" fullUrl={fullUrl}>
       <div className="container">
@@ -14,7 +18,7 @@ const Contact = ({ fullUrl }) => {
           {'I will be always happy to work with you.'}
           <ul className="social-links">
             <li>
-              <a href="mailto:&#104;&#105;&#064;&#098;&#111;&#108;&#100;&#107;&#104;&#117;&#117;&#046;&#099;&#111;&#109;">
+              <a href="#" onClick={onMailClick}>
                 Email
               </a>
             </li>
