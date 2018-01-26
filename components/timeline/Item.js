@@ -52,7 +52,7 @@ Item.List = function List({ caption, items }) {
     <div className="list">
       <h3>{caption}</h3>
       <ul>
-        {items.map(({ value, link }) => (
+        {items.map(({ value, link = '#' }) => (
           <li key={value}>
             <Link href={link}>
               <a target="_blank">{value}</a>

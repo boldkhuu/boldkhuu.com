@@ -1,8 +1,14 @@
+import PropTypes from 'prop-types';
 import { Layout } from '../components';
+import { getFullUrl } from '../utils';
 
-const Home = () => {
+const propTypes = {
+  fullUrl: PropTypes.string.isRequired,
+};
+
+const Home = ({ fullUrl }) => {
   return (
-    <Layout>
+    <Layout fullUrl={fullUrl}>
       <div className="container">
         <div className="description">
           {'My name is '} <strong>{'Boldkhuu Batbaatar'}</strong>
@@ -33,6 +39,11 @@ const Home = () => {
       `}</style>
     </Layout>
   );
+};
+
+Home.propTypes = propTypes;
+Home.getInitialProps = async ({ req }) => {
+  return { fullUrl: getFullUrl(req) };
 };
 
 export default Home;

@@ -1,39 +1,39 @@
+import PropTypes from 'prop-types';
 import { Layout } from '../components';
+import { getFullUrl } from '../utils';
 
-const Contact = () => {
+const propTypes = {
+  fullUrl: PropTypes.string.isRequired,
+};
+
+const Contact = ({ fullUrl }) => {
   return (
-    <Layout title="Contact">
+    <Layout title="Contact" fullUrl={fullUrl}>
       <div className="container">
         <div className="content">
-          <p>
-            {'I will be always happy to work with you.'}
-            <ul className="social-links">
-              <li>
-                <a href="mailto:&#104;&#105;&#064;&#098;&#111;&#108;&#100;&#107;&#104;&#117;&#117;&#046;&#099;&#111;&#109;">
-                  Email
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://linkedin.com/in/boldkhuu"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Linkedin
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/boldkhuu" target="_blank" rel="noopener noreferrer">
-                  Github
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/bxbenny" target="_blank" rel="noopener noreferrer">
-                  Twitter
-                </a>
-              </li>
-            </ul>
-          </p>
+          {'I will be always happy to work with you.'}
+          <ul className="social-links">
+            <li>
+              <a href="mailto:&#104;&#105;&#064;&#098;&#111;&#108;&#100;&#107;&#104;&#117;&#117;&#046;&#099;&#111;&#109;">
+                Email
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/boldkhuu" target="_blank" rel="noopener noreferrer">
+                Linkedin
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/boldkhuu" target="_blank" rel="noopener noreferrer">
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/bxbenny" target="_blank" rel="noopener noreferrer">
+                Twitter
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -78,6 +78,11 @@ const Contact = () => {
       `}</style>
     </Layout>
   );
+};
+
+Contact.propTypes = propTypes;
+Contact.getInitialProps = async ({ req }) => {
+  return { fullUrl: getFullUrl(req) };
 };
 
 export default Contact;

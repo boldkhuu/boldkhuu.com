@@ -1,8 +1,14 @@
+import PropTypes from 'prop-types';
 import { Layout, Timeline } from '../components';
+import { getFullUrl } from '../utils';
 
-const Experience = () => {
+const propTypes = {
+  fullUrl: PropTypes.string.isRequired,
+};
+
+const Experience = ({ fullUrl }) => {
   return (
-    <Layout title="Experience">
+    <Layout title="Experience" fullUrl={fullUrl}>
       <div className="container">
         <Timeline>
           <Timeline.Item start="2010" end="2017" height="140px" color="#2980b9">
@@ -34,6 +40,11 @@ const Experience = () => {
       `}</style>
     </Layout>
   );
+};
+
+Experience.propTypes = propTypes;
+Experience.getInitialProps = async ({ req }) => {
+  return { fullUrl: getFullUrl(req) };
 };
 
 export default Experience;

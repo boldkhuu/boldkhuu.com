@@ -1,8 +1,14 @@
+import PropTypes from 'prop-types';
 import { Layout, SkillsList } from '../components';
+import { getFullUrl } from '../utils';
 
-const Skills = () => {
+const propTypes = {
+  fullUrl: PropTypes.string.isRequired,
+};
+
+const Skills = ({ fullUrl }) => {
   return (
-    <Layout title="Skills">
+    <Layout title="Skills" fullUrl={fullUrl}>
       <div className="container">
         <SkillsList>
           <SkillsList.Skill
@@ -47,6 +53,11 @@ const Skills = () => {
       `}</style>
     </Layout>
   );
+};
+
+Skills.propTypes = propTypes;
+Skills.getInitialProps = async ({ req }) => {
+  return { fullUrl: getFullUrl(req) };
 };
 
 export default Skills;
