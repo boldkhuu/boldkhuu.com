@@ -1,6 +1,6 @@
 import css from 'styled-jsx/css';
 
-export const global = css`
+export const global = css.global`
   * {
     margin: 0;
     padding: 0;

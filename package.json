@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "next": "^4.2.1",
+    "next": "^8.1.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
