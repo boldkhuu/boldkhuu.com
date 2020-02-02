@@ -19,7 +19,15 @@
     }
   },
   "rules": {
-    "max-len": ["warn", 100],
+    "max-len": [
+      "warn",
+      120
+    ],
     "react/react-in-jsx-scope": 0
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
