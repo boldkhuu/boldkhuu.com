@@ -3,6 +3,6 @@ import Router from 'next/router';
 
 import { pageview } from '../utils/gtag';
 
-Router.events.on('routeChangeComplete', url => pageview(url));
+Router.events.on('routeChangeComplete', pageview);
 
 export default App;
