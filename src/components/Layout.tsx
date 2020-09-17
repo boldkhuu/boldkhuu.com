@@ -1,16 +1,15 @@
-import PropTypes from 'prop-types';
 import Head from 'next/head';
-import { Navigation } from '..';
-import styles, { global } from './styles';
+import css from 'styled-jsx/css';
 
-const propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  fullUrl: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-};
+import { COLORS } from '../constants/styles';
 
-const Layout = ({
+interface LayoutProps {
+  fullUrl: string;
+  title?: string;
+  description?: string;
+}
+
+export const Layout: React.FC<LayoutProps> = ({
   title,
   description = 'Boldkhuu Batbaatar is a software engineer &amp; full-stack JS developer based in the United States.',
   fullUrl,
@@ -19,7 +18,7 @@ const Layout = ({
   const fullTitle = `${title ? `${title} | ` : ''} Boldkhuu Batbaatar`;
 
   return (
-    <div className="container">
+    <>
       <Head>
         <title>{fullTitle}</title>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
@@ -38,22 +37,35 @@ const Layout = ({
         <meta name="twitter:title" content={fullTitle} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:creator" content="@bxbenny" />
-
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet" />
       </Head>
-
-      <Navigation />
 
       <div>{children}</div>
 
-      <style jsx>{styles}</style>
       <style jsx global>
-        {global}
+        {`
+          * {
+            margin: 0;
+            padding: 0;
+          }
+
+          html {
+            font: 300 62.5%/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+              'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+            color: ${COLORS.SECOND};
+            -webkit-text-size-adjust: 62.5%;
+            font-variant-ligatures: none;
+            -webkit-font-variant-ligatures: none;
+            text-rendering: optimizeLegibility;
+            -moz-osx-font-smoothing: grayscale;
+            font-smoothing: antialiased;
+            -webkit-font-smoothing: antialiased;
+          }
+
+          a {
+            text-decoration: none;
+          }
+        `}
       </style>
-    </div>
+    </>
   );
 };
-
-Layout.propTypes = propTypes;
-
-export default Layout;
