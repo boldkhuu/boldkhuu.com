@@ -22,4 +22,3 @@ jobs:
       with:
         app-name: 'boldkhuu'
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
-        startup-command: yarn start

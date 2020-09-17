@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "lint": "eslint '?(components|pages)/**/*.js'",
     "format": "prettier --write '?(components|pages)/**/*.js'",
     "precommit": "lint-staged"
