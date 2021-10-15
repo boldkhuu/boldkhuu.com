@@ -8,17 +8,17 @@ export const Footer: React.FC = () => {
           <a href="mailto:hi@boldkhuu.com">Email</a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/boldkhuu/" target="_blank">
+          <a href="https://www.linkedin.com/in/boldkhuu/" target="_blank" rel="noreferrer">
             Linkedin
           </a>
         </li>
         <li>
-          <a href="https://github.com/boldkhuu" target="_blank">
+          <a href="https://github.com/boldkhuu" target="_blank" rel="noreferrer">
             Github
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/bxbenny" target="_blank">
+          <a href="https://twitter.com/bxbenny" target="_blank" rel="noreferrer">
             Twitter
           </a>
         </li>

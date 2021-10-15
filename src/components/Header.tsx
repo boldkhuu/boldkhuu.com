@@ -4,7 +4,7 @@ export const Header: React.FC = () => {
   return (
     <header>
       <div className="greeting">
-        Hi. I'm <h1>Boldkhuu Batbaatar</h1>.
+        Hi. I&apos;m <h1>Boldkhuu Batbaatar</h1>.
       </div>
       <p>Full-stack Software Engineer</p>
 

@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import css from 'styled-jsx/css';
 
 import { COLORS } from '../constants/styles';
 
