@@ -16,7 +16,7 @@
     "dev": "next",
     "build": "next build",
     "start": "node server.js",
-    "lint": "next lint",
+    "lint": "eslint .",
     "format": "prettier --write '?(components|pages)/**/*.js'",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
@@ -28,7 +28,7 @@
     "trailingComma": "all"
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js,jsx,ts,tsx}": [
       "eslint --cache --fix"
     ],
     "*.{js,json,css,md}": [
@@ -50,7 +50,8 @@
     "lint-staged": "^16.2.4",
     "pinst": "^3.0.0",
     "prettier": "^3.6.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "@eslint/eslintrc": "^3"
   },
   "packageManager": "pnpm@10.0.0"
 }
