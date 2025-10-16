@@ -3,6 +3,7 @@ name: Boldkhuu.com CI
 on:
   release:
     types: [published]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -23,7 +24,7 @@ jobs:
     - name: Build the project
       run: pnpm build
     - name: 'Deploy to Azure App Service'
-      uses: azure/webapps-deploy@v2
+      uses: azure/webapps-deploy@v3
       with:
         app-name: 'boldkhuu'
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
