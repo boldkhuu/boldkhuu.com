@@ -20,7 +20,12 @@
     "format": "prettier --write '?(components|pages)/**/*.js'",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "postpublish": "pinst --enable",
+    "docker:build": "docker build -t boldkhuu-website .",
+    "docker:run": "docker run -p 3000:3000 boldkhuu-website",
+    "docker:dev": "docker-compose --profile dev up --build",
+    "docker:prod": "docker-compose --profile prod up --build",
+    "docker:stop": "docker-compose down"
   },
   "prettier": {
     "printWidth": 120,

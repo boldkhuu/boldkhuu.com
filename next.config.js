@@ -18,6 +18,7 @@ const nextConfig = {
     // !! WARN !!
     ignoreBuildErrors: false,
   },
+  output: 'standalone',
 };
 
 module.exports = nextConfig;
