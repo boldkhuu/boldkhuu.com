@@ -11,7 +11,7 @@ interface LayoutProps {
 
 export const Layout: React.FC<LayoutProps> = ({
   title,
-  description = 'Boldkhuu Batbaatar is a software engineer &amp; full-stack JS developer based in the United States.',
+  description = 'Boldkhuu Batbaatar is a Principal Software Engineer based in the United States.',
   fullUrl,
   children,
 }) => {
@@ -49,8 +49,17 @@ export const Layout: React.FC<LayoutProps> = ({
           }
 
           html {
-            font: 300 62.5%/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-              'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+            font:
+              300 62.5%/1.5 -apple-system,
+              BlinkMacSystemFont,
+              'Segoe UI',
+              Roboto,
+              Helvetica,
+              Arial,
+              sans-serif,
+              'Apple Color Emoji',
+              'Segoe UI Emoji',
+              'Segoe UI Symbol';
             color: ${COLORS.SECOND};
             -webkit-text-size-adjust: 62.5%;
             font-variant-ligatures: none;

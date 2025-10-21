@@ -19,26 +19,15 @@ const Home: NextPage<HomeProps> = ({ fullUrl }) => {
             items={[
               {
                 text: 'Microsoft',
+                link: 'https://www.microsoft.com',
               },
               {
                 text: 'Best Buy',
+                link: 'https://www.bestbuy.com',
               },
               {
-                text: 'The New Media Group',
-              },
-            ]}
-          />
-          <Box
-            title="Skills"
-            items={[
-              {
-                text: 'JavaScript + TypeScript',
-              },
-              {
-                text: 'React + React Native',
-              },
-              {
-                text: 'NodeJS',
+                text: 'Erxes',
+                link: 'https://www.erxes.io',
               },
             ]}
           />
@@ -71,7 +60,7 @@ const Home: NextPage<HomeProps> = ({ fullUrl }) => {
           flex: 1;
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-          grid-gap: 24px;
+          grid-gap: 0.3rem;
         }
 
         @media only screen and (min-width: ${BREAKPOINTS.TABLET}) {

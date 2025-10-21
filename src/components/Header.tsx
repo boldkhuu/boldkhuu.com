@@ -6,7 +6,7 @@ export const Header: React.FC = () => {
       <div className="greeting">
         Hi. I&apos;m <h1>Boldkhuu Batbaatar</h1>.
       </div>
-      <p>Full-stack Software Engineer</p>
+      <p>Principal Software Engineer at Microsoft.</p>
 
       <style jsx>{`
         header {

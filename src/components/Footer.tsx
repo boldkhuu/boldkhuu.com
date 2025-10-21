@@ -5,7 +5,7 @@ export const Footer: React.FC = () => {
     <footer>
       <ul>
         <li>
-          <a href="mailto:hi@boldkhuu.com">Email</a>
+          <a href="mailto:boldkhuu.batbaatar@gmail.com">Email</a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/boldkhuu/" target="_blank" rel="noreferrer">
