@@ -18,8 +18,8 @@ export const Footer: React.FC = () => {
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/bxbenny" target="_blank" rel="noreferrer">
-            Twitter
+          <a href="https://x.com/bxbenny" target="_blank" rel="noreferrer">
+            X
           </a>
         </li>
       </ul>
